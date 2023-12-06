@@ -1,0 +1,270 @@
+@import url("index.html");  /* связь с html*/
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap');
+.for_head{                        /* Cтатичная шапка */
+    border:7px solid #cb0716;
+    top:0;
+    left:0;
+    width:1510px;
+    height:100px;
+    position:fixed;
+    background-color: black;
+    z-index:1;
+    display:flex;
+    flex-direction:row;
+    text-decoration:none;
+}
+.for_head ul{
+    margin-top:75px;
+    color:red;
+    list-style-type: none;
+    font-size:11px;
+    margin-left:30px;
+    font-family: 'Comfortaa', cursive;
+}
+.for_head ul li{
+    display:inline;
+}
+.for_head img {      /* Стили только для изображения внутри .for_head */
+    max-width: 30%;
+    height: auto;
+
+}
+.for_head p {
+    color:whitesmoke;
+    font-family: 'Caveat', cursive;
+    font-size:60px;
+    padding-left:120px;
+    margin-top: 10px;
+}
+
+
+
+.for_head_text{         /*регулирование текстом на странице*/
+    position:static; /*убрать потом*/
+    padding-top:100px;
+}
+
+.for_aside{    /*боковая часть сайта*/
+    max-width:100%; /* масштабирование картинки под рамки aside*/
+    right: 0;
+    top:0;/*расположение*/
+    width:450px;
+    padding-top:30px;      /* отступ внутри рамки padding-top:5px*/
+    padding-left:45px;
+    height:1500px;  /* auto*/
+    border: 10px solid red;
+    background-color: black; /* Градиентный фон */
+    position:relative;  /*sticky relative fixed*/
+    bottom:535px;  /* двигать вверх вниз независимо*/
+    display:flex;/* 111111*/
+    flex-direction:column;
+}
+
+a{                          /* Стили для кнопки в обычном состоянии +используется для всех а,так что если что менять надо*/
+    color:inherit;
+    text-decoration: none;
+}
+a:hover{                    /* наведение */
+    color:red;
+    text-decoration: none;
+}
+a:active {
+    color: yellowgreen;
+}
+
+.text_ol_or_ul{
+    font-size:25px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.text_ol_or_ul adress{
+    font-size:15px;
+}
+
+.textstyle_main{
+    font-family: 'Tektur', cursive;
+}
+.main-article {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.for_footer{
+    bottom:0;
+    margin-top:400px;
+    width:1495px;
+    height:90px;
+    border:5px solid red;
+    bottom:0;
+    display:flex;
+    background-color: black;
+}
+.for_footer a{
+    padding-left:150px;
+    padding-top:45px;
+    color:whitesmoke;
+}
+.for_footer img{
+    max-width:30%;
+    padding-top:5px;
+    padding-left:20px;
+}
+
+.body_settings{
+    margin:1px
+}
+@media (max-width:1150px){
+    .for_aside{
+        display:none;
+        right:0;
+        max-width:100%;
+    }
+}
+
+@media (min-width:960px) and (max-width:1200px){ /*медиа для телефонов*/
+    *{margin:0;
+        padding: 0;}
+    .textstyle_main{
+        margin-top:10px;
+        font-family:'Tektur', cursive;
+        font-size:1.6vw;
+    }
+    .textstyle_main h2{
+        margin-top:10px;
+    }
+    .for_head {
+        border: 7px solid #cb0716;
+        top: 0;
+        left: 0;
+        width: 100%; /* Используем 100% ширины */
+        max-width: 98.8vw; /* Устанавливаем максимальную ширину до 1200px */
+        height: 100px;
+        position: fixed;
+        background-color: black;
+        font-size: 2vw; /* Используем относительные единицы (vw) для размера шрифта */
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+    }
+
+    .for_head p {
+        color: whitesmoke;
+        font-family: 'Caveat', cursive;
+        font-size: 4vw; /* Используем относительные единицы (vw) для размера шрифта */
+        padding-left: 15%; /* Используем относительные единицы для отступа слева */
+        margin-top: 2vw; /* Используем относительные единицы для отступа сверху */
+    }
+
+    .for_head_text {
+        position: static; /* Убрать потом */
+        padding-top: 100px;
+    }
+
+    .main-article {
+        flex-direction: row-reverse;
+    }
+    .for_aside{
+        display:none;
+        right:0;
+        max-width:100%;
+    }
+    .for_footer{
+        bottom:0;
+        margin-left:-8px;
+        margin-top:400px;
+        width:950px;
+        height:90px;
+        border:5px solid red;
+        bottom:0;
+        display:flex;
+        background-color: black;
+    }
+    .for_footer a{
+        display:block;
+        padding-left:90px;
+        padding-top:45px;
+        color:whitesmoke;
+    }
+    .for_footer img{
+        max-width:30%;
+        padding-top:5px;
+        padding-left:20px;
+    }
+}
+
+@media (min-width:375px) and (max-width:960px){ /*медиа для телефонов*/
+    *{margin:0;
+        padding: 0;}
+    .textstyle_main{
+        font-family: 'Tektur', cursive;
+        font-size:12px;  /* 0.98em */
+    }
+    .main-article {
+        display: flex;
+        justify-content:flex-end;
+    }
+    .text_ol_or_ul{
+        font-size:15px;
+        font-family: 'Comfortaa', cursive;
+    }
+    .for_head{                        /* Cтатичная шапка */
+        border:7px solid #cb0716;
+        top:0;
+        left:0;
+        width:947px;
+        height:100px;
+        position:fixed;
+        background-color: black;
+        font-size:32px;
+        z-index:1;
+        display:flex;
+        flex-direction:row;
+        text-decoration:none;
+    }
+    .for_head p {
+        color:whitesmoke;
+        font-family: 'Caveat', cursive;
+        font-size:40px;
+        padding-left:90px;
+        margin-top: 24px;
+        align-items:stretch;
+    }
+    .for_head_text{         /*регулирование текстом на странице*/
+        position:static; /*убрать потом*/
+        padding-top:113px;
+    }
+
+    .main-article {
+        flex-direction: row-reverse;
+    }
+    .for_aside{
+        display:none;
+        right:0;
+        max-width:100%;
+    }
+    .for_footer{
+        bottom:0;
+        margin-left:-8px;
+        margin-top:400px;
+        width:950px;
+        height:90px;
+        border:5px solid red;
+        bottom:0;
+        display:flex;
+        background-color: black;
+    }
+    .for_footer a{
+        display:block;
+        padding-left:90px;
+        padding-top:45px;
+        color:whitesmoke;
+    }
+    .for_footer img{
+        max-width:30%;
+        padding-top:5px;
+        padding-left:20px;
+    }
+}
