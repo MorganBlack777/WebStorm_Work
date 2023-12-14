@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="html" lang="ru">
+<head>
+    <meta charset="UTF-8"> <!-- кодировка -->
+    <link rel="stylesheet" href="commun.css">   <!–- подключаем для дизайна сайта -->
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="images/x-icon" href="/computer.ico"> <!–- фавиконка -->
+    <title>Гаджеты 21 века</title>    <!–- заголовок страницы(наверху) -->
+</head>
+
+
+<body class="body_settings">
+
+
+<header>
+    <div class="for_head">
+
+        <img src="logo.png" alt="logo_project">
+        <p>Сайт о технологиях нашего времени </p>
+        <div class="header_burger">
+            <span></span>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li class="cher" > | </li>
+                <li><a href="../information/about.html">О нас</a></li>                   <!–- меню шапки (наверху) -->
+                <li class="cher">  |  </li>
+                <li><a href="../information/contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="for_head_text">
+        <h2>Cвяжитесь с нами</h2>
+        <div class="text2">
+            <g>Если у вас есть какие-то идеи или предложения для нововведений на сайте.Смело оставляйте нам заявку!</g>
+        </div>
+    </div>
+
+</header>
+
+
+<main>
+    <article class="main-article">
+
+        <div class="">
+            <section>
+                <div class="parallax-container" id="parallax1">
+                    <div class="form-container">
+                        <div class="text4">
+                            <form method="post">
+                                <fieldset>
+                                    <label for="name">Ваше имя</label>
+                                    <input type="text" minlength="2" name="name" id="name" placeholder="Ваше имя" required="required">
+
+                                    <label for="phone">Ваш номер телефона :</label>
+                                    <input type="tel" name="phone" id="phone" maxlength="12" placeholder="Начало на +7" required>
+
+                                    <label for="email">Почта :</label>
+                                    <input type="email" id="email" name="email" placeholder="example@mail.ru" required>
+
+                                    <label for="file">Загрузить файл :</label>
+                                    <input type="file" id="file" name="file">
+                                    <p>Выберите пол:</p>
+                                    <input type="radio" id="male" name="gender" value="male" checked>
+                                    <label for="male">Мужской</label>
+                                    <input type="radio" id="female" name="gender" value="female">
+                                    <label for="female">Женский</label>
+
+                                    <p>Комментарии:</p>
+                                    <textarea id="comments" name="comments" rows="4" cols="50" maxlength="200" minlength="10" placeholder="Оставьте комментарий" required></textarea>
+
+
+                                    <button type="submit">Отправить 1 способом</button>
+                                </fieldset>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </article>
+</main>
+
+
+<footer>
+
+    <div class="text_ol_or_ul adress">
+        <adress>
+            <div class="for_footer">
+                <a href="https://vk.com/morganblack777" target="_blank" class="social-icon"><img src="vk.jpg" alt="VK"></a>
+                <a href="https://t.me/morganblack777" target="_blank" class="social-icon"><img src="tg.jpeg" alt="Telegram"></a>
+                <a href="https://www.instagram.com/ezhikov_arseniy/" target="_blank" class="social-icon"><img src="instagram.jpeg" alt="Instagram"></a>
+                <a href="https://www.youtube.com/@vadjru" target="_blank" class="social-icon"><img src="youtube.jpg" alt="Youtube"></a>
+            </div>
+        </adress>
+    </div>
+
+</footer>
+</body>
+</html>
+
+<script src="script.js"> </script>

@@ -1,8 +1,58 @@
-@import url("index.html");  /* связь с html*/
+@import url("upgradegad.html");  /* связь с html*/
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dela+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Comfortaa:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap');
+
+.parallax-container {
+    height: 145vh;
+    width:98vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://w7.pngwing.com/pngs/985/80/png-transparent-white-and-red-lines-desktop-black-and-white-black-red-white-display-resolution-black-background-miscellaneous-angle-white.png') center/cover fixed no-repeat;
+    align-items: start;
+    font-size: 30px;
+    color:white;
+}
+.test_img{
+    float:left;
+    margin-right:29px;
+    margin-left:9px;
+    width: 650px;
+    height: 450px;
+    margin-top: -15px;
+}
+.text2{
+    font-family: 'Tektur', cursive;
+    font-size:32px;
+    text-align:justify;
+    /*margin-top: -100px*/
+}
+.text2 g{
+    font-size:30px;
+}
+.text2 z{
+    font-size:38px;
+}
+.text2 p{
+    font-size:32px;
+    margin-top:5px;
+}
+.text3{
+    font-family: 'Tektur', cursive;
+    font-size:45px;
+    text-align:justify;
+    /*margin-top: 9px;*/
+    color:red
+}
+.text3 p{
+    font-size:32px;
+    color:white;
+    margin-top: -25px;
+}
+.text1{
+    margin-top:40px;
+    font-family: 'Tektur', cursive;
+    font-size:30px;
+}
 /*настройка ползунка для сайта*/
 ::-webkit-scrollbar {
     width: 12px; /* Ширина ползунка */
@@ -58,46 +108,32 @@ nav :hover{                    /* наведение */
 .for_head p {
     color:whitesmoke;
     font-family: 'Tektur', sans-serif;
-    font-size: 44px;
+    font-size: 47px;
     padding-left: 103px;
-    margin-top: 23px;
+    margin-top: 20px;
 }
 
 
-/*регулирование текстом на странице*/
-.for_head_text{
-    position:static;
-    padding-top:75px;
-}
-.text_ol_or_ul{
-    font-size:25px;
-    line-height: 1.5;
-    font-family: 'Comfortaa', cursive;
-}
-/*шрифт,размер,цвет */
-.textstyle_main{
+
+.for_head_text{         /*регулирование текстом на странице*/
+    position:static; /*убрать потом*/
+    padding-top:74px;
     font-family: 'Tektur', cursive;
+    font-size:35px;
 
 }
-.textstyle_main p{
-    font-size: 21px;
-    text-align: justify;
-    margin-right: 15px;
-}
-.textstyle_main z{
-    font-size: 40px;
-    text-align: justify;
-    margin-right: 15px;
-    scroll-margin-top:105px
+.for_head_text h2{
+    font-size:40px
 }
 /*боковая часть сайта*/
 .for_aside{
     max-width:100%;
     right: 0;
     top:0;/*расположение*/
-    width:361px;
-    padding-left:14px;
-    height:2150px;  /* auto*/
+    width:251px;
+    padding-top:30px;      /* отступ внутри рамки padding-top:5px*/
+    padding-left:45px;
+    height:900px;  /* auto*/
     border: 10px double red; /*solid*/
     border-radius:10px;
     background-color: black; /* Градиентный фон */
@@ -105,51 +141,33 @@ nav :hover{                    /* наведение */
     bottom:535px;  /* двигать вверх вниз независимо*/
     display:flex;/* 111111*/
     flex-direction:column;
-    padding-right: 10px;
 }
-/*.for_aside a{*/
-/*    margin-bottom:37px*/
-/*}*/
 
-a{             /* Стили для кнопки в обычном состоянии */
+a{                          /* Стили для кнопки в обычном состоянии +используется для всех а,так что если что менять надо*/
     color:inherit;
     text-decoration: none;
 }
-a:hover{      /* наведение */
+a:hover{                    /* наведение */
     color:red;
     text-decoration: none;
 }
 a:active {
     color: darkred;
 }
-.href_color{
-    color:red
-}
-a.href_color:hover{
-    color:white;
-    text-decoration: none;
-}
-.text_ol_or_ul{      /*размер,расстояние,стиль шрифта*/
+
+.text_ol_or_ul{
     font-size:25px;
-    line-height: 1.5;
     font-family: 'Comfortaa', cursive;
 }
+
 .text_ol_or_ul adress{
     font-size:15px;
 }
+
 .textstyle_main{
     font-family: 'Tektur', cursive;
-}
-.textstyle_main p{
-    font-size: 25px;
-    text-align: justify;
-    margin-right: 15px;
-}
-.textstyle_main z{
-    font-size: 40px;
-    text-align: justify;
-    margin-right: 15px;
-    scroll-margin-top:105px
+    font-size:30px;
+    margin-right: 211px;
 }
 .main-article {
     display: flex;
@@ -161,8 +179,6 @@ a.href_color:hover{
     margin-bottom:40px;
     cursor: pointer;
     transition: transform 0.5s ease;
-
-
 }
 
 .for_footer .social-icon img {
@@ -176,11 +192,11 @@ a.href_color:hover{
 .for_footer{
     bottom:0;
     margin-top:50px;
-    border-radius:10px;
     width:97.9vw;
     height:90px;
     border:7px solid red;
     display:flex;
+    border-radius:10px;
     background-color: black;
     justify-content: space-around;
     align-items: center;
@@ -195,11 +211,9 @@ a.href_color:hover{
     max-width:100%;
     padding-right:110px;
 }
-
 .body_settings{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('gifkaslowed.gif'); /* Градиент от темно-серого к черному */
+    background: linear-gradient(to bottom, #1a1a1a, #000000); /* Градиент от темно-серого к черному */
     color: whitesmoke; /* Белый цвет текста */
-    background-size: contain;
 }
 
 /*бургер меню*/
@@ -210,7 +224,7 @@ a.href_color:hover{
     width:30px;
     height:18px;
     margin-top: 44px;
-    margin-left: 35px;
+    margin-left: 10px;
     align-items:center;
 }
 .header_burger span{
@@ -240,10 +254,39 @@ a.href_color:hover{
     top:50%;
     transform:rotate(45deg) translate(0,50%);
 }
-.adapt{
-    width:1100px;
-    height:500px;
+
+/* Встроенное видео с YouTube */
+.video-container {
+    width: 87%;
+    position: relative;
 }
+
+.video-container iframe {
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /*space-around*/
+}
+
+.gallery-item {
+    /*flex: 1 0 300px;*/
+    margin: 10px;
+}
+
+.gallery img {
+    /*width: 100%;*/
+    /*height: auto;*/
+    border-radius: 8px;
+}
+
 
 @media (max-width:1140px){                              /*отрубаем for aside*/
     .for_aside{    /*боковая часть сайта*/
@@ -265,20 +308,18 @@ a.href_color:hover{
 
 @media (min-width:375px) and (max-width:517px){ /*медиа для телефонов*/
     *{margin:0;
-        }              /*padding: 0;*/
+    }              /*padding: 0;*/
     .textstyle_main{
         font-family: 'Tektur', cursive;
-        font-size:14px;  /* 0.98em */
-    }
-    .textstyle_main h1{
-        font-size:23px
+        font-size:12px;  /* 0.98em */
     }
     .main-article {
         display: flex;
         justify-content:flex-end;
+        width: 218%;
     }
     .text_ol_or_ul{
-        font-size:25px;
+        font-size:15px;
         font-family: 'Comfortaa', cursive;
     }
     .for_head{                        /* Cтатичная шапка */
@@ -298,15 +339,15 @@ a.href_color:hover{
     }
     .for_head p {
         color:whitesmoke;
-        font-size:28px;
-        padding-left:44px;
-        margin-top: 31px;
+        font-size:31px;
+        padding-left:28px;
+        margin-top: 32px;
         align-items:stretch;
     }
     .for_head_text{         /*регулирование текстом на странице*/
         position:static; /*убрать потом*/
         padding-top:113px;
-        width:219%
+        width:220%
     }
 
     .header_burger { display: flex }
@@ -324,13 +365,12 @@ a.href_color:hover{
         margin-top:113px; /*70*/
         color:red;
         list-style-type: none;
-        font-size:33px;
+        font-size:37px; /*11*/
+        /*margin-left:30px;*/
         font-family: 'Comfortaa', cursive;
         animation: burgerAnimation 0.4s;
     }
-    .adapt{
-        width:950px;
-    }
+
     .nav ul{
         flex-direction: column;
         row-gap: 30px;
@@ -368,6 +408,37 @@ a.href_color:hover{
         max-width:99%;
         padding-top:5px;
         padding-right:28px;
+    }
+    .gallery-item {
+        /*flex: 1 0 300px;*/
+        margin: 6px;
+    }
+    .for_footer .social-icon {
+        display: inline-block;
+        margin-right:20px;
+        margin-bottom:45px;
+        cursor: pointer;
+        transition: transform 0.5s ease;
+    }
+
+    .for_footer .social-icon img {
+        width: 76px; /* Размер иконки, укажите подходящее значение */
+        height: auto;
+    }
+
+    .for_footer .social-icon:hover {
+        transform: scale(1.1); /* Увеличение размера при наведении курсора */
+    }
+    .parallax-container {
+        height: 260vh;
+        width:220vw;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://w7.pngwing.com/pngs/985/80/png-transparent-white-and-red-lines-desktop-black-and-white-black-red-white-display-resolution-black-background-miscellaneous-angle-white.png') center/cover fixed no-repeat;
+        align-items: start;
+        font-size: 30px;
+        color:white;
+    }
+    .text2 z{
+        font-size:36px;
     }
 }
 
